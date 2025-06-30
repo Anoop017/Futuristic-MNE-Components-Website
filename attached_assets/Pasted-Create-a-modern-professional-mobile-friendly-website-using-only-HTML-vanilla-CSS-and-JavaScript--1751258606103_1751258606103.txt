@@ -1,0 +1,36 @@
+Create a modern, professional, mobile-friendly website using only HTML, vanilla CSS, and JavaScript for a manufacturing company named **MNE Components India Pvt. Ltd.**
+
+Use the following as references:
+1. The company’s existing website: https://mnecomponents.com/
+2. The design inspiration: https://ennovi.com/
+
+Requirements:
+- Clean, highly polished UI with subtle but professional animations and transitions
+- Responsive design (mobile-first, fully adaptive to all screen sizes)
+- Smooth scroll behavior and sticky navbar with active section highlighting
+- **Hero Section** with banner image, powerful heading, tagline, and a call-to-action button like “Explore More” or “Contact Us”
+- **About Section** with a brief company profile, mission, and core strengths
+- **Products Section** with a responsive grid layout of the company’s products (use placeholder images and titles for now), each card should animate on hover
+- **Careers Section** with a brief message like “Work with Us” and a button or email link to send resumes
+- **Contact Section** with:
+  - Company address
+  - Embedded Google Map (use a dummy map for now)
+  - Social media links (LinkedIn, Instagram, Email)
+  - A clean contact form with Name, Email, and Message fields (no backend needed)
+- **Footer** with company branding and navigation links
+- Smooth animations: fade-ins on scroll, hover effects on product cards/buttons, sliding or fade transitions between sections
+- Optional: a simple page loader or intro animation (non-intrusive)
+- Use a consistent color theme and elegant typography inspired by ennovi.com
+
+Important:
+- Use clean, well-commented HTML/CSS/JS
+- No external frameworks like Bootstrap or jQuery — only pure HTML, CSS, and JS
+- Keep the structure maintainable and scalable for future updates
+
+Folder structure:
+- `index.html`
+- `style.css`
+- `script.js`
+- `assets/` for placeholder images or icons
+
+This is only a frontend project — no backend or server integration is needed.
