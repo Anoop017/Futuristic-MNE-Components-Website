@@ -1,0 +1,57 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="200" fill="#f8fafc"/>
+  
+  <!-- Stamped Component -->
+  <g>
+    <!-- Main stamped part -->
+    <path d="M80 120 L80 100 Q80 85 95 85 L205 85 Q220 85 220 100 L220 120 L200 120 L200 140 L180 140 L180 160 L120 160 L120 140 L100 140 L100 120 Z" 
+          fill="#9ca3af" stroke="#6b7280" stroke-width="2"/>
+    
+    <!-- Stamping marks/texture -->
+    <g stroke="#6b7280" stroke-width="0.5" opacity="0.7">
+      <line x1="90" y1="95" x2="210" y2="95"/>
+      <line x1="90" y1="105" x2="210" y2="105"/>
+      <line x1="90" y1="115" x2="210" y2="115"/>
+    </g>
+    
+    <!-- Mounting holes -->
+    <circle cx="100" cy="100" r="4" fill="white" stroke="#374151" stroke-width="1"/>
+    <circle cx="200" cy="100" r="4" fill="white" stroke="#374151" stroke-width="1"/>
+    <circle cx="150" cy="130" r="3" fill="white" stroke="#374151" stroke-width="1"/>
+    
+    <!-- Bent tabs -->
+    <rect x="78" y="118" width="4" height="15" fill="#6b7280"/>
+    <rect x="218" y="118" width="4" height="15" fill="#6b7280"/>
+    
+    <!-- Surface finish indicator -->
+    <rect x="130" y="95" width="40" height="20" fill="rgba(251, 191, 36, 0.3)" stroke="#f59e0b" stroke-width="1" rx="2"/>
+    <text x="150" y="107" text-anchor="middle" font-family="Arial" font-size="6" fill="#92400e">Tin Plated</text>
+    
+    <!-- Progressive stamping steps indicator -->
+    <g font-family="Arial" font-size="5" fill="#374151">
+      <text x="250" y="90">Step 1: Blank</text>
+      <text x="250" y="105">Step 2: Pierce</text>
+      <text x="250" y="120">Step 3: Form</text>
+      <text x="250" y="135">Step 4: Bend</text>
+    </g>
+  </g>
+  
+  <!-- Technical specifications -->
+  <g font-family="Arial, sans-serif" font-size="8" fill="#374151">
+    <text x="20" y="30">Stamped Aluminum Component</text>
+    <text x="20" y="45">Material: Al 6061-T6</text>
+    <text x="20" y="60">Thickness: 2.0mm</text>
+    <text x="20" y="75">Tolerance: ±0.1mm</text>
+  </g>
+  
+  <!-- Manufacturing process -->
+  <g font-family="Arial, sans-serif" font-size="7" fill="#6b7280">
+    <text x="20" y="180">Progressive Die Stamping</text>
+    <text x="150" y="180" text-anchor="middle">High-Speed Production: 120 SPM</text>
+  </g>
+  
+  <!-- Quality certification -->
+  <circle cx="270" cy="30" r="12" fill="#1e40af"/>
+  <text x="270" y="34" text-anchor="middle" fill="white" font-family="Arial" font-size="8" font-weight="bold">PPAP</text>
+</svg>

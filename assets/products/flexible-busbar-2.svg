@@ -1,0 +1,51 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="200" fill="#f8fafc"/>
+  
+  <!-- Insulated Rigid Busbar -->
+  <g>
+    <!-- Main copper conductor -->
+    <rect x="50" y="90" width="200" height="20" fill="#d97706" rx="2"/>
+    
+    <!-- Epoxy coating -->
+    <rect x="48" y="88" width="204" height="24" fill="rgba(59, 130, 246, 0.4)" stroke="#3b82f6" stroke-width="2" rx="4"/>
+    
+    <!-- Connection points -->
+    <rect x="40" y="85" width="20" height="30" fill="#374151" rx="3"/>
+    <rect x="240" y="85" width="20" height="30" fill="#374151" rx="3"/>
+    
+    <!-- Mounting holes -->
+    <circle cx="50" cy="100" r="4" fill="#1f2937"/>
+    <circle cx="250" cy="100" r="4" fill="#1f2937"/>
+    
+    <!-- Insulation layers -->
+    <rect x="70" y="92" width="160" height="4" fill="#1e40af" opacity="0.6"/>
+    <rect x="70" y="104" width="160" height="4" fill="#1e40af" opacity="0.6"/>
+    
+    <!-- Bolt connections -->
+    <circle cx="50" cy="100" r="2" fill="#6b7280"/>
+    <circle cx="250" cy="100" r="2" fill="#6b7280"/>
+    
+    <!-- Cross-section indicator -->
+    <line x1="150" y1="75" x2="150" y2="125" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3,3"/>
+  </g>
+  
+  <!-- Technical specifications -->
+  <g font-family="Arial, sans-serif" font-size="8" fill="#374151">
+    <text x="20" y="30">Insulated Rigid Busbar</text>
+    <text x="20" y="45">Material: Cu + Epoxy Coating</text>
+    <text x="20" y="60">Insulation: Class H</text>
+    <text x="20" y="75">Voltage: 36kV</text>
+  </g>
+  
+  <!-- Insulation properties -->
+  <g font-family="Arial, sans-serif" font-size="7" fill="#1e40af">
+    <text x="150" y="150" text-anchor="middle">Epoxy Powder Coating</text>
+    <text x="150" y="165" text-anchor="middle">Temperature: -40°C to +155°C</text>
+    <text x="150" y="180" text-anchor="middle">Dielectric Strength: 25kV/mm</text>
+  </g>
+  
+  <!-- Quality indicators -->
+  <circle cx="270" cy="30" r="12" fill="#10b981"/>
+  <text x="270" y="34" text-anchor="middle" fill="white" font-family="Arial" font-size="8" font-weight="bold">RoHS</text>
+</svg>

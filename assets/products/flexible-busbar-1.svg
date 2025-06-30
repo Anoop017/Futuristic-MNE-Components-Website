@@ -1,0 +1,61 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="200" fill="#f8fafc"/>
+  
+  <!-- Flexible Busbar Main Body -->
+  <g>
+    <!-- Main conductor strip - curved to show flexibility -->
+    <path d="M30 100 Q80 80 130 100 T230 100 Q250 110 270 100" 
+          stroke="#d97706" stroke-width="8" fill="none"/>
+    
+    <!-- Laminated layers -->
+    <path d="M30 95 Q80 75 130 95 T230 95 Q250 105 270 95" 
+          stroke="#92400e" stroke-width="4" fill="none"/>
+    <path d="M30 105 Q80 85 130 105 T230 105 Q250 115 270 105" 
+          stroke="#92400e" stroke-width="4" fill="none"/>
+    
+    <!-- Connection terminals -->
+    <rect x="25" y="90" width="15" height="20" fill="#374151" rx="2"/>
+    <rect x="260" y="90" width="15" height="20" fill="#374151" rx="2"/>
+    
+    <!-- Terminal holes -->
+    <circle cx="32" cy="100" r="3" fill="#1f2937"/>
+    <circle cx="267" cy="100" r="3" fill="#1f2937"/>
+    
+    <!-- Insulation coating indicators -->
+    <ellipse cx="100" cy="100" rx="12" ry="8" fill="rgba(59, 130, 246, 0.3)" stroke="#3b82f6" stroke-width="1"/>
+    <ellipse cx="180" cy="100" rx="12" ry="8" fill="rgba(59, 130, 246, 0.3)" stroke="#3b82f6" stroke-width="1"/>
+    
+    <!-- Flexibility indicators -->
+    <g stroke="#6b7280" stroke-width="1" stroke-dasharray="2,2" fill="none" opacity="0.5">
+      <path d="M80 70 Q90 60 100 70"/>
+      <path d="M150 70 Q160 60 170 70"/>
+      <path d="M200 70 Q210 60 220 70"/>
+    </g>
+  </g>
+  
+  <!-- Technical specifications -->
+  <g font-family="Arial, sans-serif" font-size="8" fill="#374151">
+    <text x="20" y="30">Flexible Copper Busbar</text>
+    <text x="20" y="45">Material: Cu-ETP</text>
+    <text x="20" y="60">Current: 500A</text>
+    <text x="20" y="75">Voltage: 1000V</text>
+  </g>
+  
+  <!-- Current flow arrows -->
+  <g>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+              refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444"/>
+      </marker>
+    </defs>
+    <path d="M50 130 L90 130 M130 130 L170 130 M210 130 L250 130" 
+          stroke="#ef4444" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="150" y="145" text-anchor="middle" font-family="Arial" font-size="8" fill="#ef4444">Current Flow</text>
+  </g>
+  
+  <!-- Quality indicators -->
+  <circle cx="270" cy="30" r="12" fill="#10b981"/>
+  <text x="270" y="34" text-anchor="middle" fill="white" font-family="Arial" font-size="8" font-weight="bold">ISO</text>
+</svg>

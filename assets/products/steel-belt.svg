@@ -1,0 +1,77 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="200" fill="#f8fafc"/>
+  
+  <!-- Steel Compression Belt -->
+  <g>
+    <!-- Battery pack outline -->
+    <rect x="60" y="60" width="180" height="80" fill="#e5e7eb" stroke="#9ca3af" stroke-width="2" rx="4"/>
+    <text x="150" y="105" text-anchor="middle" font-family="Arial" font-size="10" fill="#6b7280">Battery Pack</text>
+    
+    <!-- Steel compression belt -->
+    <rect x="50" y="90" width="200" height="20" fill="#374151" rx="2"/>
+    
+    <!-- Belt buckle/tensioning mechanism -->
+    <rect x="245" y="85" width="15" height="30" fill="#1f2937" rx="2"/>
+    <rect x="248" y="88" width="9" height="8" fill="#6b7280" rx="1"/>
+    <rect x="248" y="104" width="9" height="8" fill="#6b7280" rx="1"/>
+    
+    <!-- Tensioning indicator -->
+    <path d="M260 100 L275 95 L275 105 Z" fill="#ef4444"/>
+    <text x="280" y="104" font-family="Arial" font-size="6" fill="#ef4444">Tension</text>
+    
+    <!-- Belt texture/pattern -->
+    <g stroke="#9ca3af" stroke-width="0.5" opacity="0.7">
+      <line x1="60" y1="95" x2="240" y2="95"/>
+      <line x1="60" y1="100" x2="240" y2="100"/>
+      <line x1="60" y1="105" x2="240" y2="105"/>
+    </g>
+    
+    <!-- Mounting points -->
+    <circle cx="70" cy="100" r="3" fill="#1f2937"/>
+    <circle cx="230" cy="100" r="3" fill="#1f2937"/>
+    
+    <!-- Compression force arrows -->
+    <g>
+      <defs>
+        <marker id="forceArrow" markerWidth="8" markerHeight="6" 
+                refX="0" refY="3" orient="auto">
+          <polygon points="0 0, 8 3, 0 6" fill="#7c3aed"/>
+        </marker>
+      </defs>
+      <path d="M150 45 L150 60" stroke="#7c3aed" stroke-width="2" marker-end="url(#forceArrow)"/>
+      <path d="M150 155 L150 140" stroke="#7c3aed" stroke-width="2" marker-end="url(#forceArrow)"/>
+      <text x="150" y="40" text-anchor="middle" font-family="Arial" font-size="7" fill="#7c3aed">Compression Force</text>
+    </g>
+    
+    <!-- Safety indicator -->
+    <rect x="190" y="115" width="20" height="10" fill="rgba(16, 185, 129, 0.3)" stroke="#10b981" stroke-width="1" rx="2"/>
+    <text x="200" y="122" text-anchor="middle" font-family="Arial" font-size="5" fill="#10b981">SAFE</text>
+  </g>
+  
+  <!-- Technical specifications -->
+  <g font-family="Arial, sans-serif" font-size="8" fill="#374151">
+    <text x="20" y="30">Steel Compression Belt</text>
+    <text x="20" y="45">Material: SS 316L</text>
+    <text x="20" y="60">Width: 25mm</text>
+    <text x="20" y="75">Tensile: 540 MPa</text>
+  </g>
+  
+  <!-- Application details -->
+  <g font-family="Arial, sans-serif" font-size="7" fill="#6b7280">
+    <text x="20" y="165">Application:</text>
+    <text x="20" y="180">• Battery pack securing</text>
+    <text x="20" y="195">• Crash protection</text>
+  </g>
+  
+  <!-- Performance features -->
+  <g font-family="Arial, sans-serif" font-size="6" fill="#7c3aed">
+    <text x="200" y="165">Features:</text>
+    <text x="200" y="177">• High tensile strength</text>
+    <text x="200" y="189">• Corrosion resistant</text>
+  </g>
+  
+  <!-- Quality certification -->
+  <circle cx="270" cy="30" r="12" fill="#374151"/>
+  <text x="270" y="34" text-anchor="middle" fill="white" font-family="Arial" font-size="8" font-weight="bold">SS</text>
+</svg>

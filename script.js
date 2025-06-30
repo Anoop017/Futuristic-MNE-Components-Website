@@ -11,6 +11,8 @@ function initializeApp() {
     initContactForm();
     initBackToTop();
     initSmoothScrolling();
+    initGallery();
+    initEnhancedAnimations();
 }
 
 // Page Loader
@@ -479,6 +481,172 @@ function initAccessibility() {
 
 // Initialize accessibility features
 document.addEventListener('DOMContentLoaded', initAccessibility);
+
+// Gallery Functionality
+function initGallery() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    // Filter functionality
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Filter gallery items with animation
+            galleryItems.forEach(item => {
+                const category = item.getAttribute('data-category');
+                
+                if (filter === 'all' || category === filter) {
+                    item.classList.remove('hidden');
+                    setTimeout(() => {
+                        item.style.transform = 'scale(1)';
+                        item.style.opacity = '1';
+                    }, 100);
+                } else {
+                    item.style.transform = 'scale(0.8)';
+                    item.style.opacity = '0';
+                    setTimeout(() => {
+                        item.classList.add('hidden');
+                    }, 300);
+                }
+            });
+        });
+    });
+}
+
+// Lightbox functionality
+function openLightbox(imageSrc) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    
+    lightboxImage.src = imageSrc;
+    lightbox.classList.add('show');
+    
+    // Prevent body scroll
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('show');
+    
+    // Restore body scroll
+    document.body.style.overflow = 'auto';
+}
+
+// Close lightbox on escape key or outside click
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeLightbox();
+    }
+});
+
+document.addEventListener('click', function(e) {
+    const lightbox = document.getElementById('lightbox');
+    if (e.target === lightbox) {
+        closeLightbox();
+    }
+});
+
+// Enhanced Animations
+function initEnhancedAnimations() {
+    // Stagger animation for gallery items
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach((item, index) => {
+        item.style.animationDelay = `${index * 0.1}s`;
+    });
+    
+    // Enhanced product card animations
+    const productCards = document.querySelectorAll('.product-card.enhanced');
+    productCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            const floatingElements = this.querySelectorAll('.float-element');
+            floatingElements.forEach(element => {
+                element.style.animationDuration = '3s';
+            });
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            const floatingElements = this.querySelectorAll('.float-element');
+            floatingElements.forEach(element => {
+                element.style.animationDuration = '6s';
+            });
+        });
+    });
+    
+    // Parallax scrolling for hero section
+    window.addEventListener('scroll', function() {
+        const scrolled = window.pageYOffset;
+        const parallaxElements = document.querySelectorAll('.hero-bg-image');
+        
+        parallaxElements.forEach(element => {
+            const speed = 0.5;
+            element.style.transform = `translateY(${scrolled * speed}px)`;
+        });
+    });
+    
+    // Animated counter for statistics (if any)
+    const observerOptions = {
+        threshold: 0.7
+    };
+    
+    const numberObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateNumbers(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    // Observe any elements with data-count attribute
+    document.querySelectorAll('[data-count]').forEach(el => {
+        numberObserver.observe(el);
+    });
+}
+
+// Animate numbers function
+function animateNumbers(element) {
+    const target = parseInt(element.getAttribute('data-count'));
+    const duration = 2000;
+    const increment = target / (duration / 16);
+    let current = 0;
+    
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            current = target;
+            clearInterval(timer);
+        }
+        element.textContent = Math.floor(current);
+    }, 16);
+}
+
+// Enhanced scroll animations with reveal effects
+function initScrollRevealAnimations() {
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+    
+    revealElements.forEach(el => {
+        revealObserver.observe(el);
+    });
+}
+
+// Call the reveal animations
+document.addEventListener('DOMContentLoaded', initScrollRevealAnimations);
 
 // Error handling for images
 document.addEventListener('DOMContentLoaded', function() {

@@ -1,0 +1,67 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="200" fill="#f8fafc"/>
+  
+  <!-- Hybrid Busbar with Multiple Materials -->
+  <g>
+    <!-- Copper section -->
+    <rect x="50" y="95" width="80" height="10" fill="#d97706"/>
+    <text x="90" y="90" text-anchor="middle" font-family="Arial" font-size="6" fill="#92400e">Copper</text>
+    
+    <!-- Aluminum section -->
+    <rect x="130" y="95" width="80" height="10" fill="#9ca3af"/>
+    <text x="170" y="90" text-anchor="middle" font-family="Arial" font-size="6" fill="#6b7280">Aluminum</text>
+    
+    <!-- Welded joint -->
+    <rect x="128" y="93" width="4" height="14" fill="#ef4444"/>
+    <circle cx="130" cy="100" r="2" fill="#fbbf24"/>
+    
+    <!-- Insulation layer -->
+    <rect x="48" y="92" width="164" height="16" fill="rgba(59, 130, 246, 0.3)" stroke="#3b82f6" stroke-width="1" rx="2"/>
+    
+    <!-- Connection terminals -->
+    <rect x="35" y="90" width="20" height="20" fill="#374151" rx="2"/>
+    <rect x="245" y="90" width="20" height="20" fill="#374151" rx="2"/>
+    
+    <!-- Terminal bolts -->
+    <circle cx="45" cy="100" r="3" fill="#1f2937"/>
+    <circle cx="255" cy="100" r="3" fill="#1f2937"/>
+    
+    <!-- Heat dissipation fins -->
+    <rect x="50" y="85" width="3" height="8" fill="#6b7280"/>
+    <rect x="60" y="85" width="3" height="8" fill="#6b7280"/>
+    <rect x="70" y="85" width="3" height="8" fill="#6b7280"/>
+    <rect x="240" y="85" width="3" height="8" fill="#6b7280"/>
+    <rect x="250" y="85" width="3" height="8" fill="#6b7280"/>
+    
+    <!-- Flexible cable extensions -->
+    <path d="M50 100 Q30 110 20 120" stroke="#92400e" stroke-width="3" fill="none"/>
+    <path d="M250 100 Q270 110 280 120" stroke="#92400e" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Technical specifications -->
+  <g font-family="Arial, sans-serif" font-size="8" fill="#374151">
+    <text x="20" y="30">Hybrid Busbar Assembly</text>
+    <text x="20" y="45">Cu-Al Welded Joint</text>
+    <text x="20" y="60">Current: 800A</text>
+    <text x="20" y="75">Multi-Material Design</text>
+  </g>
+  
+  <!-- Material transition indicator -->
+  <g>
+    <line x1="130" y1="130" x2="130" y2="140" stroke="#ef4444" stroke-width="2"/>
+    <text x="130" y="155" text-anchor="middle" font-family="Arial" font-size="7" fill="#ef4444">Laser Welded Joint</text>
+  </g>
+  
+  <!-- Performance indicators -->
+  <g font-family="Arial, sans-serif" font-size="6" fill="#059669">
+    <text x="200" y="150">• Optimized conductivity</text>
+    <text x="200" y="162">• Weight reduction</text>
+    <text x="200" y="174">• Cost effective</text>
+    <text x="200" y="186">• Thermal management</text>
+  </g>
+  
+  <!-- Quality certification -->
+  <circle cx="270" cy="30" r="12" fill="#7c3aed"/>
+  <text x="270" y="34" text-anchor="middle" fill="white" font-family="Arial" font-size="8" font-weight="bold">UL</text>
+</svg>
