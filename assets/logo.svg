@@ -1,0 +1,33 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="40" cy="40" r="38" fill="#1e40af" stroke="#3b82f6" stroke-width="2"/>
+  
+  <!-- Company Initials MNE -->
+  <text x="40" y="30" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="16" font-weight="700">MNE</text>
+  
+  <!-- Components Text -->
+  <text x="40" y="48" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="8" font-weight="400">COMPONENTS</text>
+  
+  <!-- Electric/Circuit Elements -->
+  <g stroke="white" stroke-width="1.5" fill="none">
+    <!-- Battery Symbol -->
+    <rect x="15" y="58" width="8" height="4" fill="white"/>
+    <rect x="17" y="56" width="4" height="2" fill="white"/>
+    
+    <!-- Connection Lines -->
+    <path d="M23 60 L30 60 M35 60 L42 60 M47 60 L54 60" stroke-linecap="round"/>
+    
+    <!-- Connector Symbol -->
+    <circle cx="57" cy="60" r="3" fill="none"/>
+    <circle cx="57" cy="60" r="1" fill="white"/>
+  </g>
+  
+  <!-- Subtle Gradient Overlay -->
+  <defs>
+    <radialGradient id="logoGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.1)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+  <circle cx="40" cy="40" r="38" fill="url(#logoGradient)"/>
+</svg>

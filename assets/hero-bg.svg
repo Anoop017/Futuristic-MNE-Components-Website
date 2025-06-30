@@ -1,0 +1,96 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    
+    <!-- Circuit Pattern -->
+    <pattern id="circuitPattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <g stroke="rgba(255,255,255,0.1)" stroke-width="1" fill="none">
+        <!-- Grid Lines -->
+        <path d="M0 50 L200 50 M0 100 L200 100 M0 150 L200 150"/>
+        <path d="M50 0 L50 200 M100 0 L100 200 M150 0 L150 200"/>
+        
+        <!-- Circuit Elements -->
+        <circle cx="50" cy="50" r="3" fill="rgba(255,255,255,0.2)"/>
+        <circle cx="150" cy="150" r="3" fill="rgba(255,255,255,0.2)"/>
+        <rect x="95" y="95" width="10" height="10" fill="rgba(255,255,255,0.15)" rx="2"/>
+        
+        <!-- Connection Lines -->
+        <path d="M50 50 L100 50 L100 100 L150 100 L150 150" stroke-width="2"/>
+      </g>
+    </pattern>
+    
+    <!-- Manufacturing Elements -->
+    <g id="manufacturingIcon">
+      <rect x="0" y="10" width="40" height="20" fill="rgba(255,255,255,0.1)" rx="2"/>
+      <rect x="5" y="15" width="30" height="10" fill="rgba(255,255,255,0.2)" rx="1"/>
+      <circle cx="10" cy="20" r="2" fill="rgba(255,255,255,0.3)"/>
+      <circle cx="30" cy="20" r="2" fill="rgba(255,255,255,0.3)"/>
+      <!-- Connector pins -->
+      <rect x="35" y="18" width="8" height="4" fill="rgba(255,255,255,0.4)"/>
+    </g>
+  </defs>
+  
+  <!-- Main Background -->
+  <rect width="1920" height="1080" fill="url(#bgGradient)"/>
+  
+  <!-- Circuit Pattern Overlay -->
+  <rect width="1920" height="1080" fill="url(#circuitPattern)" opacity="0.3"/>
+  
+  <!-- Floating Manufacturing Elements -->
+  <g opacity="0.15">
+    <!-- Battery Connectors -->
+    <use href="#manufacturingIcon" transform="translate(200, 150) rotate(15) scale(1.2)"/>
+    <use href="#manufacturingIcon" transform="translate(800, 300) rotate(-20) scale(0.8)"/>
+    <use href="#manufacturingIcon" transform="translate(1400, 200) rotate(45) scale(1.5)"/>
+    <use href="#manufacturingIcon" transform="translate(300, 600) rotate(-30) scale(1.1)"/>
+    <use href="#manufacturingIcon" transform="translate(1200, 700) rotate(60) scale(0.9)"/>
+    <use href="#manufacturingIcon" transform="translate(600, 800) rotate(-45) scale(1.3)"/>
+  </g>
+  
+  <!-- Geometric Shapes for Modern Look -->
+  <g opacity="0.1">
+    <!-- Large circles -->
+    <circle cx="1600" cy="200" r="150" fill="rgba(255,255,255,0.1)"/>
+    <circle cx="300" cy="800" r="200" fill="rgba(255,255,255,0.08)"/>
+    
+    <!-- Triangular elements -->
+    <polygon points="100,300 200,300 150,200" fill="rgba(255,255,255,0.06)"/>
+    <polygon points="1500,600 1600,600 1550,500" fill="rgba(255,255,255,0.06)"/>
+    
+    <!-- Rectangular elements -->
+    <rect x="1000" y="100" width="300" height="50" fill="rgba(255,255,255,0.05)" rx="25"/>
+    <rect x="500" y="950" width="400" height="30" fill="rgba(255,255,255,0.05)" rx="15"/>
+  </g>
+  
+  <!-- Electric Current Flow Lines -->
+  <g stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M0 400 Q400 350 800 400 T1600 400 L1920 400">
+      <animate attributeName="stroke-dasharray" values="0 100;50 50;100 0;0 100" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 600 Q600 550 1200 600 L1920 600">
+      <animate attributeName="stroke-dasharray" values="100 0;50 50;0 100;100 0" dur="6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Subtle Light Rays -->
+  <g opacity="0.1">
+    <defs>
+      <radialGradient id="lightRay1" cx="0%" cy="0%" r="100%">
+        <stop offset="0%" stop-color="rgba(255,255,255,0.3)"/>
+        <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+      </radialGradient>
+      <radialGradient id="lightRay2" cx="100%" cy="100%" r="100%">
+        <stop offset="0%" stop-color="rgba(255,255,255,0.2)"/>
+        <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+      </radialGradient>
+    </defs>
+    
+    <ellipse cx="0" cy="0" rx="400" ry="600" fill="url(#lightRay1)" transform="rotate(-30)"/>
+    <ellipse cx="1920" cy="1080" rx="500" ry="400" fill="url(#lightRay2)" transform="rotate(30)"/>
+  </g>
+</svg>
